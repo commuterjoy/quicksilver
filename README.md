@@ -5,6 +5,9 @@ node log_front_order.js
 
 # Fetch the story packages
 cut -f 1 data/front.txt | uniq | node discover_packages.js 
+
+# View how the story package has changed over time
+node diff.js < data/items/world_2013_jan_17_delhi-gang-rape-fast-track
 ```
 
 ## Notes
