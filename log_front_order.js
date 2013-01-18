@@ -3,7 +3,7 @@ var request = require('request'),
     util = require('util'),
     fs = require('fs');
 
-var fronts = ['uk-home', 'sport', 'culture', 'technology', 'commentisfree', 'business', 'uk', 'world', 'football'];
+var fronts = ['uk-home', 'us-home', 'sport', 'culture', 'technology', 'commentisfree', 'business', 'uk', 'world', 'football'];
 var url = "http://content.guardianapis.com/%s?format=json&show-editors-picks=true&edition=UK&order-by=newest&api-key=%s"
 var apiKey = process.env.API_KEY;
 
