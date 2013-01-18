@@ -49,7 +49,8 @@ process.stdin.on('end', function () {
             }
 
         } else { 
-            console.log(val, storyPackages[val].join(","));
+            var a = storyPackages[val];
+            console.log(val, a.length, a);
         }
 
     });
