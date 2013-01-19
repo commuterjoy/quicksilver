@@ -18,7 +18,12 @@ node diff.js < data/items/world_2013_jan_17_delhi-gang-rape-fast-track
 - Q. Who makes these things? What are the good/bad.
 - Q. How does maintenance happen out of hours, weekends etc.
 - Q. What is the life-cycle of a package? How long is it maintained? Does that correlate to usage?
-- Q. Why this selection?
+- Q. Why no package on some stories, Eg. aaron-swartz-suicide-girlfriend-internet-reddit
+- Q. Why different packages on same series of events, Eg.
+      sport_2013_jan_18_lance-armstrong-admits-doping-oprah-winfrey,
+      sport_2013_jan_18_lance-armstrong-doping-admission, 
+      sport_2013_jan_19_lance-armstrong-oprah-winfrey-second-interview
+- Q. Why this selection, in this order?
 
 ```
 2013-01-18T16:46:47.049Z        sport/2013/jan/18/lance-armstrong-admits-doping-oprah-winfrey

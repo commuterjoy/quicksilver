@@ -41,20 +41,24 @@ process.stdin.on('end', function () {
                 add = a.diff(b), 
                 del = b.diff(a);
            
-            if (add.length > 0 || del.length > 0) {
-                console.log([val, 'add', a.length, a.diff(b).toString()].join("\t"));
-                console.log([val, 'del', a.length, b.diff(a).toString()].join("\t"));
-            } else {
-                console.log([val, 'n/a'].join("\t"));
-            }
+            if (add.length > 0)
+                console.log([val, 'ADD', a.length, fmtStories(a.diff(b))].join("\t"));
+       
+            if (del.length > 0)
+                console.log([val, 'DEL', a.length, fmtStories(b.diff(a))].join("\t"));
+           
+            if (add.length === 0 && del.length === 0) 
+                console.log([val, '---', a.length].join("\t"));
 
         } else { 
             var a = storyPackages[val];
-            console.log(val, a.length, a);
+            console.log([val, 'ADD', a.length, fmtStories(a)].join("\t"));
         }
 
     });
 
 });
 
-
+var fmtStories = function(p) { 
+    return "\n" + p.map(function(i) { return "\t" + i  } ).join("\n")
+}
